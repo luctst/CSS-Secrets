@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>CSS Secret - Multiple Border</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+    <style media="screen">
+      .test {
+        max-width: 20em;
+	      padding: 2em;
+	      margin: 2em auto 0;
+	      font: 100%/1.5 sans-serif;
+      }
+      div.container {
+        background: yellowgreen;
+        min-height: 100vh;
+      }
+      div.divTest {
+        background: darkred;
+        box-shadow: 0 0 0 10px #655,
+        0 0 0 15px deeppink, /*You can create multiple borders when you add many box-shadow*/
+        0 2px 5px 15px rgba(0,0,0,.6);
+      }
+      div.divTest2 {
+        background: darkred;
+        border: 10px solid #655;
+        outline: 15px dashed deeppink; /*Outline can create only 2 border but you can change the
+        style*/
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="test divTest mt-5">
+            <p>How can i generate multiple borders ??</p>
+          </div>
+          <div class="test divTest2 mt-5">
+            <p>A second way to generate multiple border</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
