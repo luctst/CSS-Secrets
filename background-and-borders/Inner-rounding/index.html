@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>CSS Secret - Inner Rounding</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+    <style media="screen">
+    .test {
+      max-width: 20em;
+      padding: 2em;
+      margin: 2em auto 0;
+      font: 100%/1.5 sans-serif;
+    }
+    .container {
+      min-height: 100vh;
+      background: #68A;
+    }
+    div.divTest {
+      background: tan;
+      border-radius: .8em;
+      outline: .6em solid #655; /*This create a second border above our div and don't take the
+      style of the div*/
+      box-shadow: 0 0 0 .5em #655; /*This alow to fill the gap in the corner of our div to create
+      a border sharp and a container rounded*/
+    }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="test divTest">
+            <p class="text-center">I have a nice subtle inner rounding don't i look pretty ?</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
