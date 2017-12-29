@@ -1,2 +1,3 @@
 # CSS-Secrets
-Trainning with some CSS3 Tricks, with the help of the Lea Verou book "CSS SECRETS"
+In this Repository you will find some solutions to commom CSS problems
+*jfkgh
