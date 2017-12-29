@@ -7,3 +7,4 @@ Here how this Repository works :
 
 Check my website :)
 [Lucas Tostée](https://www.lucas-tostee.com)
+You can fork this repo to see demos :)
