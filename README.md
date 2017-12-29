@@ -5,5 +5,5 @@ Here how this Repository works :
 * In each folders there are subfolders.
 * In each subfolders there are README file who present the problem we trying to solve.
 
-Check my website :) :
+Check my website :)
 [Lucas Tostée](https://www.lucas-tostee.com)
