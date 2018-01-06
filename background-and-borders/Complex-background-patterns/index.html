@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>CSS Secret - Complex background patterns</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+    <style media="screen">
+      section,div {
+        min-height: 100vh;
+      }
+      .wrapper {
+        margin: 0 100px;
+        min-height: 100vh;
+      }
+      div.container {
+        min-height: 100vh;
+        background: linear-gradient(90deg,rgba(200, 0, 0, 0.5)50%,transparent 0),
+        linear-gradient(rgba(200, 0, 0, 0.5) 50%,transparent 0); /*A second linear-gradient allow
+        to create in combination with background-size complex background*/
+        background-size: 60px 30px;
+      }
+      div.container-fluid {
+        background: #58a;
+        background-image: linear-gradient(red 1px,transparent 0),
+        linear-gradient(90deg,yellow 1px,transparent 0);
+        background-size: 100px 100px;
+      }
+      section.container {
+        background: #58a;
+        background-image: linear-gradient(#45b 5px,transparent 0),
+        linear-gradient(90deg,red 2px,transparent 0),
+        linear-gradient(hsla(0,0%,100%,.3) 1px,transparent 0),
+        linear-gradient(90deg,hsla(0,0%,100%,.3) 1px,transparent 0);/*You can add more
+        linear-gradient who overlay each other */
+        background-size: 75px 75px,75px 75px,15px 15px,15px 15px;
+      }
+      section.container-fluid {
+        background: #655;
+        background-image: radial-gradient(tan 30%,transparent 0);/*radial-gradient allow us to
+        create circle, ellipses etc..*/
+        background-size: 50vw 100vh;
+      }
+      div.wrapper {
+        background: #555;
+        background-image: radial-gradient(tan 30%,transparent 0),
+        radial-gradient(tan 30%,transparent 0);
+        background-size: 10vw 10vh;
+        background-position: 0 0,40px 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container"></div>
+    <div class="container-fluid"></div>
+    <section class="container"></section>
+    <section class="container-fluid"></section>
+    <div class="wrapper"></div>
+  </body>
+</html>
