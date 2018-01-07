@@ -1,0 +1,34 @@
+.test {
+  width: 30vw;
+  min-height: 40px;
+}
+div.divTest {
+  background: #fb5;
+  transform: skewX(-45deg);/*The instructions skewX allow to stretch element on the Xaxe*/
+}
+div.divTest > p {
+  font: 100% /1.5 sans-serif;
+  height: 100%;
+  transform: skewX(45deg);/*If you use skew on an element parent all this child will be also stretch so you
+  must inverse the instructions to replace correctly his childs*/
+}
+div.divTest2 {
+  position: relative;/*With position relative the child element in absolute will start at top:0 and left:0
+  of this element*/
+}
+div.divTest2::before { /*The pseudo-element ::before create a child who will be the first inline child of
+  the element*/
+  content: '';/*This allow to generate the box*/
+  background: #fb6;
+  position: absolute;
+  top: 0px;
+  left: 0px;/*By define all offsets to 0 the pseudo-element stretch perfectly with this parent who is the
+  first parent in relative*/
+  right: 0px;
+  bottom: 0px;
+  display: block;
+  z-index: -1;/*Like our pseudo-element is above all the other element because is always will be the first
+  element because ::before instructions, z-index -1 allow to moves the element underneath it's parent*/
+  transform: skewX(45deg); /*Finally we apply our transform so only the pseudo-element will be stretch and
+  not all of childs elements*/
+}
