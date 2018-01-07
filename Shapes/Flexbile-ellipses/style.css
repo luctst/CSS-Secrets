@@ -11,8 +11,8 @@ div.divTest2 {
   background: #fb3;
   width: 200Px;
   height: 200px;
-  border-radius: 40% / 50%;/*We can specify a diferent horizontal and vertical radius, using the % makes the
-  thing more responsive*/
+  border-radius: 40% / 50%;/*We can specify a diferent horizontal and vertical radius very helpful when the
+  width and the height are not equal, using the % makes the thing more responsive*/
 }
 div.divTest3 {
   background-color:#fb3;
