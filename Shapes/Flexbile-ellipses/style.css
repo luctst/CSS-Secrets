@@ -1,0 +1,31 @@
+body {
+  background: #FFf;
+}
+div.divTest {
+  background: #fb3;
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+}
+div.divTest2 {
+  background: #fb3;
+  width: 200Px;
+  height: 200px;
+  border-radius: 40% / 50%;/*We can specify a diferent horizontal and vertical radius, using the % makes the
+  thing more responsive*/
+}
+div.divTest3 {
+  background-color:#fb3;
+  width: 200px;
+  height: 200px;
+  border-radius: 100% 100% 0 0;/*This instruction is equal to border-top-left = 100%, border-top-right = 100%
+  border-bottom-right = 0, border-bottom-left = 0*/
+}
+div.divTest4 {
+  background-color: #fb3;
+  width: 400px;
+  height: 500px;
+  border-radius: 50% / 100% 100% 0 0;/*This instruction says on the horizontal axe all the corner will take
+  50% of the width and on the vertical axe the border-top-left will take 100% radius the border-top-right
+  will take 100% too and the other corners won't moves*/
+}
