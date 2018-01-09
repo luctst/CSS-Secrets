@@ -1,0 +1,9 @@
+img {
+  clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);/*Clip-path allow us to specify a specific region of an
+  element to display, rather than showing the complete area */
+  transition: 1s clip-path;
+}
+img:hover {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);/*You can create Polygon,inset, or rectangle with clip-path
+  the first parameter is for the size of the width and the second for the height*/
+}
