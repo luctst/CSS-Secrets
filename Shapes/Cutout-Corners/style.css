@@ -1,0 +1,33 @@
+.test {
+  width: 30vw;
+  min-height: 40px;
+}
+div.divTest {
+  background: #58a;
+  background: linear-gradient(-45deg,transparent 15px,#58a 0);/*Add a background-linear gradient transparent
+  with a tilt(-45deg in our example) can hide a corner of your block*/
+}
+div.divTest2 {
+  background: #58a;
+  background: linear-gradient(135deg,transparent 20px,#58a 0) top left,
+  linear-gradient(-135deg, transparent 20px, #58a 0) top right,
+  linear-gradient(-45deg,transparent 20px,#58a 0) bottom right,
+  linear-gradient(45deg,transparent 20px,#58a 0) bottom left;
+  background-size: 51% 50%; /*Add 4 background-lniear with Different tilt can hide the box of our element*/
+  background-repeat: no-repeat;
+}
+div.divTest3 {
+  background: #58a;
+  background: radial-gradient(circle at top left,transparent 15px,#58a 0) top left,
+  radial-gradient(circle at top right, transparent 15px, #58a 0) top right,
+  radial-gradient(circle at bottom right,transparent 15px,#58a 0) bottom right,
+  radial-gradient(circle at bottom left,transparent 15px,#58a 0) bottom left;
+  background-size: 51% 50%; /*Add 4 background-lniear with Different tilt can hide the box of our element*/
+  background-repeat: no-repeat;
+}
+div.divTest4 {
+  background: #58a;
+  clip-path: polygon(20px 0,calc(100% - 20px) 0, 100% 20px, 100% calc(100% - 20px),calc(100% - 20px) 100%,
+  20px 100%, 0 calc(100% - 20px),0 20px);/*With clip-path we create seven points and with the width and height
+  of this point we create our cutout corners easily*/
+}
