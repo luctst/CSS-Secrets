@@ -1,0 +1,30 @@
+.test {
+  width: 30vw;
+  min-height: 40px;
+}
+div.container {
+  min-height: 100vh;
+}
+div.test > p {
+  color: #Fff;
+  text-align: center;
+}
+div.divTest {
+  transform: perspective(.5em) rotateX(5deg);/*Allow us to create an element in 3d with the perspective
+  instructions*/
+  background: #CCC;
+}
+div.divTest2 {
+  color: white;
+  position: relative;
+}
+div.divTest2::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  transform: scaleY(1.5) perspective(.5em) rotateX(5deg);/*With scaleY we can increase the height of our
+  element and because we have transform-origin to the bottom the element will never go beyond his parent*/
+  z-index: -1;
+  background: #ccc;
+  transform-origin: bottom;/*Allow us to change the origin of the graduation for operations like rotate etc..*/
+}

@@ -14,7 +14,7 @@ div.divTest2 {
   linear-gradient(-45deg,transparent 20px,#58a 0) bottom right,
   linear-gradient(45deg,transparent 20px,#58a 0) bottom left;
   background-size: 51% 50%; /*Add 4 background-lniear with Different tilt can hide the box of our element*/
-  background-repeat: no-repeat;
+  background-repeat: no-repeat;/*No-repeat allow us to have only four background instead of many*/
 }
 div.divTest3 {
   background: #58a;
