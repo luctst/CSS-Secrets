@@ -1,4 +1,4 @@
-# [CSS-Secrets, click to all the secrets](https://luctst.github.io/CSS-Secrets/)
+# [CSS-Secrets, click to see all the secrets](https://luctst.github.io/CSS-Secrets/)
 ## In this Repository you will find some solutions to commom CSS problems
 Here how this Repository works :
 * Each section is in folder.
