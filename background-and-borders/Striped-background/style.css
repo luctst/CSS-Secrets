@@ -1,0 +1,27 @@
+section,div {
+  margin-bottom: 50px;
+}
+div.container-fluid {
+  min-height: 100vh;
+  background: linear-gradient(#68a 50%,#fb3 0%); /*This create a linear background in our
+  container, the first color take 50% height of his parent and the second color because
+  0% is declared takes the same value of the first color*/
+  background-size: 100% 200px; /*Specify the size of the background, like linear-gradient is
+  repeat each background will take the second parameter on px*/
+}
+section.container-fluid {
+  min-height: 100vh;
+  background: linear-gradient(#fb3 33.3%,#58a 66.6%,yellowgreen 0); /*Add a third color who
+  takes the size of the previous color*/
+  background-size: 100% 200Px;
+}
+div.container {
+  min-height: 100Vh;
+  background: linear-gradient(45deg,#fb3 50%,#58a 60%); /*Add degres first, alow to
+  change the direction of the gradient*/
+}
+section.container {
+  min-height: 100vh;
+  background: repeating-linear-gradient(60deg,blue 50%,red 60%,green 70%); /*This alow to
+  create repeating stripes with only one instructions instead of three*/
+}

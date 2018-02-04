@@ -4,34 +4,7 @@
     <meta charset="utf-8">
     <title>CSS Secret - Flexbile background positioning</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
-    <style media="screen">
-    .test {
-      max-width: 20em;
-      padding: 2em;
-      margin: 2em auto 0;
-      font: 100%/1.5 sans-serif;
-    }
-    div.container {
-      background: url('astronaut.svg') no-repeat bottom right #58a; /*If you use older browser you
-      must add bottom and right or left,top here*/
-      background-position: right 20px bottom 10px; /*This provide a position for the img
-      in the padding-box*/
-      min-height: 100vh;
-    }
-    section.container {
-      padding: 30px; /*Add padding*/
-      background: url('astronaut.svg') no-repeat top right #59a;
-      background-origin: content-box; /*This change the origin of the img, by default an
-      background is in top left from the padding-box, add this change the origin position*/
-      min-height: 100vh;
-    }
-    footer.container {
-      background: url('astronaut.svg') no-repeat #60a;
-      min-height: 100vh;
-      background-position: calc(100% - 20px) calc(100% - 20px); /*Calc provide an easy solution
-      to place our elements on the axe Y and X in the content-box*/
-    }
-    </style>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <div class="container">

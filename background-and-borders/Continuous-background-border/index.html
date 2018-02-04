@@ -4,24 +4,7 @@
     <meta charset="utf-8">
     <title>CSS Secret - Continuous background border</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
-    <style media="screen">
-      .test {
-        max-width: 20em;
-        padding: 2em;
-        margin: 2em auto 0;
-        font: 100%/1.5 sans-serif;
-      }
-      div.divTest {
-        border: 1em solid transparent;/*Add a border where the backgroung will take place*/
-        background: linear-gradient(white,white),url('stone-art.jpg');/*To make this effect we add a
-        linear-gradient which is pure white so this way it can cover the image and we only see the border*/
-        background-size: cover;/*The background cover the element*/
-        background-clip: padding-box,border-box;/*Border-box allow to show the background trough the border of
-        the element and not the entire element, in this case the entire div*/
-        background-origin: border-box;/*background-origin specify the origin of the image, for example
-        border-box in our demo here will put the origin on the both axes Y(0) and X(0) of the border-box */
-      }
-    </style>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <div class="container">
