@@ -1,0 +1,18 @@
+.test {
+  height: 200px;
+  width: 400px;
+  box-shadow: 0px 10px 4px -4px rgba(0, 0, 0, 0.5);
+  background: #655;
+}
+.test2 {
+  height: 200Px;
+  width: 400px;
+  box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.5);
+  background: #655;
+}
+.test3 {
+  height: 200px;
+  width: 400Px;
+  box-shadow: 5px 0px 5px -5px black, -5px 0px 5px -5px black;
+  background: #655;
+}
