@@ -8,8 +8,43 @@
   </head>
   <body>
     <div class="container">
-      <div class="col-12">
-
+      <div class="row">
+        <div class="col-12">
+          <h1 class="text-center mb-2">Pie charts</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <h2 class="mb-2">Using pseudo-elements</h2>
+          <p>We can first create pie charts by using pseudo-elements :</p>
+          <div class="pie mx-auto mt-2 mb-2"></div>
+          <p>How this method works :</p>
+          <ol>
+            <li>First we create our circle, with an <code>height</code> and <code>width</code> and a
+            <code>border-radius</code>.</li>
+            <li>We add a <code>background</code> to our circle and a <code>background-image</code> with an other
+            color who will be hided by our pseudo-elements.</li>
+            <li>We create our pseudo-elements with a <code>margin-left</code> 50% so that he can cover the half of
+            our circle, and we add a background-color inherit so he takes the same color than his parent (yellowgreen).</li>
+            <li>We now add a <code>border-radius</code> to our pseudo-elements so now he has the exact same shape of his parent.</li>
+            <li>We add a <code>transform-origin</code> to our pseudo-elements so that he could <code>rotate</code> around the circle center.</li>
+            <li>Finally we add <code>transform rotate</code> to turn the circle and show the brown hided color.</li>
+          </ol>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <h2 class="mb-2">More than 50%</h2>
+          <p>How to use this method with more than 50%</p>
+          <div class="pie2 mt-2 mb-2 mx-auto"></div>
+          <p>How this method works : </p>
+          <ol>
+            <li>With the old method if try tu show more 50% it won't works.</li>
+            <li>To do that we can simply inverted the color of our pseudo-elements.</li>
+            <li>Change the <code>background-color</code> inherit by <code>background</code> #655 and it should be works.</li>
+            <li>We can add some <code>animation</code> ;).</li>
+          </ol>
+        </div>
       </div>
     </div>
   </body>
