@@ -10,12 +10,41 @@
     <div class="container">
       <div class="row">
         <div class="col-12">
-          <div class="divTest test mt-5 mx-auto">
+          <h1 class="text-center">Trapezoid tabs</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <h2 class="mt-4 mb-4">Using without pseudo-elements</h2>
+          <div class="divTest test mt-4 mb-4 mx-auto">
             <p>Bonjour je suis un trapéze</p>
           </div>
+          <ol class="list-group">
+            <li class="list-group-item">To create this effect we need to add <code>transform</code>property.</li>
+            <li class="list-group-item">Using <code>perspective</code>allow us to use element in 3d environment.</li>
+            <li class="list-group-item">Finally using the <code>rotate</code> property on X axis move the element.</li>
+            <li class="list-group-item">Problem !! Using this method move all the child elements for example our
+            <code>p</code>markup in our div, Solution below.</li>
+          </ol>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <h2 class="mt-4 mb-4">Solution with pseudo-elements</h2>
           <div class="divTest2 test mt-5 mx-auto">
             <p>Bonjour je suis un trapéze</p>
           </div>
+          <ol class="list-group">
+            <li class="list-group-item">First we add <code>position: relative</code>in our parent element.</li>
+            <li class="list-group-item">Then we create in our css file the pseudo-elements <code>::before</code>
+            who will create an element as the first child that can be stylized later as we want.</li>
+            <li class="list-group-item">To display our <code>::before</code>we need to add this property
+            <code>content: ''</code>.</li>
+            <li class="list-group-item">Once our element is stylized we can start to use the <code>transform</code>
+            property above, by this way only the <code>::before</code>element will be change.</li>
+            <li class="list-group-item">We can add the <code>transform-origin</code>property to change the origin
+            of operations like <code>rotate</code><code>scale</code>..</li>
+          </ol>
         </div>
       </div>
     </div>
