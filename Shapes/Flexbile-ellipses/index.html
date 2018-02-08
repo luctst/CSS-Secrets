@@ -9,11 +9,58 @@
   <body>
     <div class="container">
       <div class="row">
-        <div class="col-12 text-center">
-          <div class="divTest mx-auto mb-2"></div>
-          <div class="divTest2 mx-auto mb-1"></div>
-          <div class="divTest3 mx-auto mb-1"></div>
-          <div class="divTest4 mx-auto mb-1"></div>
+        <div class="col-12">
+          <h1 class="text-center mt-4 mb-4">Flexible ellipses</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <h2 class="mt-4 mb-4">Simple ellipse</h2>
+          <div class="divTest mx-auto mb-4 mt-4"></div>
+          <ol class="list-group">
+            <li class="list-group-item">To create a circle simply add <code>border-radius</code>property
+            on the element.</li>
+          </ol>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <h2 class="mt-4 mb-4">Change on the X and Y axis</h2>
+          <div class="divTest2 mx-auto mb-4 mt-4"></div>
+          <ol class="list-group">
+            <li class="list-group-item">We can specify diferent value for horizontal and vertical axis.</li>
+            <li class="list-group-item">on <code>border-radius</code>the first parameter will move the radius on
+            the X axis and the second parameter on the Y axis.</li>
+            <li class="list-group-item">The parameters are separate by <code>/</code>.</li>
+          </ol>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <h2 class="mt-4 mb-4">Modify each corners</h2>
+          <div class="divTest3 mx-auto mb-4 mt-4"></div>
+          <ol class="list-group">
+            <li class="list-group-item">We can if we want modify each of the corners of an element.</li>
+            <li class="list-group-item">On <code>border-radius</code>property use 4 parameter to specify each corners.</li>
+            <li class="list-group-item">The first parameter is equal to <code>border-top-left</code>, the
+            second to <code>border-top-right</code>, the third to <code>border-bottom-right</code>and
+            the last to <code>border-bottom-left</code>.</li>
+          </ol>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <h2 class="mt-4 mb-4">Modify each corners on differents axis</h2>
+          <div class="divTest4 mx-auto mb-4 mt-4"></div>
+          <ol class="list-group">
+            <li class="list-group-item">We can combine the method above to create this kind of ellipse.</li>
+            <li class="list-group-item">On <code>border-radius</code> use the <code>/</code>separator
+            to modify the X and Y axis.</li>
+            <li class="list-group-item">The parameters on the left will modify the corners that you indicate
+            on the X axis.</li>
+            <li class="list-group-item">The parameters on the right will modify the corners taht you indicate
+            on the Y axis.</li>
+          </ol>
         </div>
       </div>
     </div>
