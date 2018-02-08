@@ -5,8 +5,11 @@
   font: 100%/1.5 sans-serif;
 }
 div.container {
-  background: url('stone-art.jpg');
   min-height: 100vh;
+}
+div.bg {
+  background: url('stone-art.jpg');
+  min-height: 30vh;
 }
 div.divTest {
   border: 10px solid hsla(0,0%,100%,.5);
