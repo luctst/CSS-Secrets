@@ -10,12 +10,36 @@
     <div class="container">
       <div class="row">
         <div class="col-12">
-          <div class="divTest test mx-auto mt-2">
+          <h1 class="text-center mt-4 mb-4">Parrallelograms</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <h2 class="mt-4 mb-4">Without using pseudo-element</h2>
+          <div class="divTest test mx-auto mt-4 mb-4">
             <p class="text-center"><a href="#">Click Me !!</a></p>
           </div>
+          <ol class="list-group">
+            <li class="list-group-item">Add <code>transform: skewX</code>property to stretch the element on the
+            X axis.</li>
+            <li class="list-group-item">Problem !! Using this method involved that all childs elements will be
+            stretch too.</li>
+          </ol>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <h2 class="mt-4 mb-4">Using pseudo-element</h2>
           <div class="divTest2 test mx-auto mt-2">
             <p class="text-center"><a href="#">Click Me !!</a></p>
           </div>
+          <ol class="list-group">
+            <li class="list-group-item">We first add <code>position: relative</code>to the element parent.</li>
+            <li class="list-group-item">We create our <code>::before</code>element in our CSS file.</li>
+            <li class="list-group-item">Now, you can start to stylized your <code>::before</code>element.</li>
+            <li class="list-group-item">Once your pseudo-element is correctly stylized you can simply add
+            <code>transform: skew</code>on him to stretch only this element.</li>
+          </ol>
         </div>
       </div>
     </div>
